@@ -1,0 +1,9 @@
+
+mkdir .venv
+pipenv install py4j pyjnius 
+pipenv lock --pre 
+pipenv shell
+
+python compilejava.py
+
+python app.py
